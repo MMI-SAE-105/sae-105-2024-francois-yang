@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : YANG
+- PRÉNOM : Francois
+- GROUPE : C2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/jsJ08HtY8KuTF9nNdZrlgz/SA%C3%89-103?node-id=77-245&node-type=frame&t=c9iuUwbCPCpjRFK3-0
 
 ## Sujet
 
