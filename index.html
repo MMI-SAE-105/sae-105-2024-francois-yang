@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Ciné 25</title>
-    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./base/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -13,23 +13,40 @@
         <div class="header__logo">
             <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img">
         </div>
-        <div class="header__icone">
-            <img src="../assets/icon/loupe_de_recherche.svg" alt="Loupe de recherche" class="header__icone-img">
-            <img src="../assets/icon/menu_hamburger.svg" alt="Menu" class="header__icone-img">
-        </div>
-        <nav class="header__nav">
-            <a href="index.html" class="header__nav-link">Accueil</a>
-            <a href="../html/programme_diffusion.html" class="header__nav-link">Programme de diffusion</a>
-            <a href="../html/le_festival.html" class="header__nav-link">Le festival</a>
-            <a href="../html/contact.html" class="header__nav-link">Contact</a>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Accueil</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/programme_diffusion.html">Programme de diffusion</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/le_festival.html">Le festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/reservation.html">Réservation de billet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/contact.html">Contact</a>
+                </li>
+            </ul>
         </nav>
-        <h1 class="hero__title">Flash Ciné 25</h1>
-        <p class="hero__subtitle">
-            “Des films si courts que vous aurez encore le temps pour l'apéro, du fromage et des montagnes !”
-        </p>
-        <img src="../assets/header/image_header.png" alt="Image de fond" class="header__background">
     </header>
+
     <main>
+        <header class="hero__title">
+            <h1>Flash Ciné 25</h1>
+            <p class="hero__subtitle">
+                “Des films si courts que vous aurez encore le temps pour l'apéro, du fromage et des montagnes !”
+            </p>
+            <img src="../assets/header/image_header.png" alt="Image de fond" class="header__background">
+        </header>
         <section class="chapeau">
             <strong class="chapeau__description">
                 ~ Un festival de cinéma en plein air <br>
