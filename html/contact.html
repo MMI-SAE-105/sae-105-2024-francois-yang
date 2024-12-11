@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page contact</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__logo">
+            <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img">
+        </div>
+        <div class="header__icone">
+            <img src="../assets/icon/loupe_de_recherche.svg" alt="Loupe de recherche" class="header__icone-img">
+            <img src="../assets/icon/menu_hamburger.svg" alt="Menu" class="header__icone-img">
+        </div>
+        <nav class="header__nav">
+            <a href="/" class="header__nav-link">Accueil</a>
+            <a href="../html/programme_diffusion.html" class="header__nav-link">Programme de diffusion</a>
+            <a href="../html/le_festival.html" class="header__nav-link">Le festival</a>
+            <a href="../html/contact.html" class="header__nav-link">Contact</a>
+        </nav>
+        <h1 class="hero__title">Contact</h1>
+        <img src="../assets/header/image_header_contact.webp" alt="Image de fond" class="header__background">
+    </header>
+    <main>
+        <section class="contact-form">
+            <h1 class="contact-form__title">~ Vous pouvez nous joindre ~</h1>
+            <h2 class="contact-form__subtitle">Nous contacter</h2>
+
+            <form action="#" method="post" class="contact-form__fields">
+
+                <div class="contact-form__field">
+                    <label for="prenom" class="contact-form__label">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" class="contact-form__input" placeholder="Prénom"
+                        required>
+                </div>
+
+
+                <div class="contact-form__field">
+                    <label for="nom" class="contact-form__label">Nom</label>
+                    <input type="text" id="nom" name="nom" class="contact-form__input" placeholder="Nom" required>
+                </div>
+
+
+                <div class="contact-form__field">
+                    <label for="email" class="contact-form__label">Adresse électronique</label>
+                    <input type="email" id="email" name="email" class="contact-form__input"
+                        placeholder="Adresse électronique" required>
+                </div>
+
+
+                <div class="contact-form__field">
+                    <label for="phone" class="contact-form__label">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" class="contact-form__input"
+                        placeholder="Numéro de téléphone">
+                </div>
+
+
+                <div class="contact-form__field">
+                    <label for="message" class="contact-form__label">Message</label>
+                    <textarea id="message" name="message" class="contact-form__textarea" placeholder="Message" rows="5"
+                        required></textarea>
+                </div>
+
+
+                <div class="contact-form__field">
+                    <button type="submit" class="contact-form__button">Envoyer</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="location">
+
+            <h1 class="location__title">~ Retrouvez nous à la Plaine de Jeu de Visitation ~</h1>
+
+
+            <h2 class="location__subtitle">La carte</h2>
+
+
+            <div class="location__place">
+                <img src="../assets/main/localisation_lieu.webp" alt="Localisation du lieu" class="location__map">
+                <a href="https://www.google.fr/maps/place/Plaine+de+jeux+de+la+Visitation/@47.1040262,6.1518704,17z/data=!3m1!4b1!4m6!3m5!1s0x478d77c7e74d2ce5:0x95b774c82ff7d4a8!8m2!3d47.1040226!4d6.1544453!16s%2Fg%2F11p0664z6j?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" class="location__link-text">
+                    Cliquez ici pour accéder à Google Map
+                </a>
+            </div>
+        </section>
+
+        <section class="social-network">
+            <h2>Suivez-nous</h2>
+            <img src="../assets/icon/tiktok.svg" alt="TikTok">
+            <img src="../assets/icon/instagram.svg" alt="Instagram">
+            <img src="../assets/icon/facebook.svg" alt="Facebook">
+            <img src="../assets/icon/twitter.svg" alt="Twitter">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <img src="../assets/icon/logo_site_festival2.svg" alt="Logo Festival Flash Cinéma 25"
+                    class="footer__logo">
+                <h2 class="footer__title">Festival Flash Cinéma 25</h2>
+            </div>
+
+            <nav class="footer__menu">
+                <h3 class="footer__menu-title">Menu</h3>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="../html/mentions_legales.html"
+                            class="footer__menu-link">Mentions légales</a></li>
+                    <li class="footer__menu-item"><a href="../html/newsletters.html"
+                            class="footer__menu-link">Newsletters</a></li>
+                    <li class="footer__menu-item"><a href="../html/contact.html" class="footer__menu-link">Voir
+                            le lieu</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <h3 class="footer__contact-title">Contact</h3>
+                <p class="footer__contact-address">26 Rue Pierre Vernier, 25290 Ornans</p>
+                <p class="footer__contact-phone">03 81 62 40 30</p>
+            </div>
+
+            <div class="footer__social">
+                <h3 class="footer__social-title">Nos réseaux sociaux</h3>
+                <div class="footer__social-icons">
+                    <img src="../assets/icon/tiktok.svg" alt="TikTok">
+                    <img src="../assets/icon/instagram.svg" alt="Instagram">
+                    <img src="../assets/icon/facebook.svg" alt="Facebook">
+                    <img src="../assets/icon/twitter.svg" alt="Twitter">
+                    <img src="../assets/icon/youtube.svg" alt="YouTube">
+
+                </div>
+            </div>
+
+            <div class="footer__extra">
+                <div class="footer__accessibility">
+                    <img src="../assets/icon/picto_accessibilite.svg" alt="Malvoyants">
+                </div>
+                <div class="footer__partner">
+                    <img src="../assets/logo/logo_visuel.png" alt="Logo Ornans Vallées de Vies"
+                        class="footer__partner-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
