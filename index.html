@@ -6,63 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Ciné 25</title>
     <link href="/src/css/components/menu.css" rel="stylesheet" />
+    <link href="/src/css/layout/header.css" rel="stylesheet" />
 </head>
 
 <body>
+
     <header class="header">
         <div class="header__logo">
             <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img">
         </div>
 
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <link href="/src/css/components/button.css" rel="stylesheet" />
             <span class="menu-btn__bar" aria-hidden="true"></span>
             <span class="menu-btn__bar" aria-hidden="true"></span>
             <span class="menu-btn__bar" aria-hidden="true"></span>
         </button>
-
         <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-            <ul class="menu__list list-unstyled">
-                <li class="menu__item">
-                    <a class="menu__link" href="index.html">Accueil</a>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="../html/programme_diffusion.html">Programme de
+                        diffusion</a></li>
+                <li class="menu__item"><a class="menu__link" href="../html/le_festival.html">Le festival</a></li>
+                <li class="menu__item"><a class="menu__link" href="../html/reservation.html">Réservation de
+                        billet</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../html/programme_diffusion.html">Programme de diffusion</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../html/le_festival.html">Le festival</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../html/reservation.html">Réservation de billet</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="../html/contact.html">Contact</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="../html/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <link href="/src/css/layout/header.css" rel="stylesheet" />
-        <header class="hero__title">
-            <h1>Flash Ciné 25</h1>
-            <p class="hero__subtitle">
-                “Des films si courts que vous aurez encore le temps pour l'apéro, du fromage et des montagnes !”
-            </p>
-            <div class="hero__background">
-                <img src="../assets/header/image_header.png" alt="Image de fond" class="header__background">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Flash Ciné 25</h1>
+                <p class="hero__subtitle">
+                    “Des films si courts que vous aurez encore le temps pour l'apéro, du fromage et des montagnes !”
+                </p>
             </div>
-        </header>
+            <div class="hero__background">
+                <img src="../assets/header/image_header.png" alt="Image de fond" class="hero__background-img">
+            </div>
+        </section>
 
         <section class="chapo">
             <link href="/src/css/components/chapo.css" rel="stylesheet" />
             <strong class="chapo__description">
-                ~ Un festival de cinéma en plein air <br>
-                du 8 août au 10 août 2025 ~
+                ~ Un festival de cinéma en plein air du 8 août au 10 août 2025 ~
             </strong>
         </section>
 
         <section class="festival">
-            <link href="/src/css/components/festival.css" rel="stylesheet" />
+            <link href="/src/css/section/festival.css" rel="stylesheet" />
             <div class="festival__bloc">
                 <img src="../assets/main/image_plein_air.png" alt="Image de plein air" class="festival__image">
                 <img src="../assets/main/image_de_popcorn.png" alt="Image de popcorn" class="image__popcorn">
@@ -73,15 +68,22 @@
             </div>
         </section>
 
-        <section>
-            <div class="festival__location"></div>
-            <h2 class="festival__details-text">Le festival aura lieu à la Plaine de Jeu de Visitation.</h2>
-            <img src="../assets/lieu_festival.webp" alt="Lieu du festival" class="lieu__festival">
-            <p><span class="festival__location-description-text">La plaine de jeux de la Visitation à Ornans est un
+        <section class="location">
+            <link href="/src/css/section/location.css" rel="stylesheet" />
+            <h2 class="location__details-text">Le festival aura lieu à la Plaine de Jeu de Visitation.</h2>
+            <figure>>
+                <img src="../assets//main/lieu_festival.webp" alt="Lieu du festival" class="location__festivald">
+                <figcaption class="location__festvial-description-text">La plaine de jeux de la Visitation à Ornans est
+                    un
                     espace de loisirs familial situé en plein air, offrant divers équipements pour les enfants, comme
                     des balançoires, toboggans, et structures d’escalade. Entourée de verdure et de jeux dans un cadre
                     naturel agréable, elle est l’endroit idéale pour diffuser les courts-métrages.
-                </span></p>
+                </figcaption>
+            </figure>
+            <div class="location__action">
+                <a href="https://www.google.fr/maps/place/Plaine+de+jeux+de+la+Visitation/@47.1040262,6.1518704,17z/data=!3m1!4b1!4m6!3m5!1s0x478d77c7e74d2ce5:0x95b774c82ff7d4a8!8m2!3d47.1040226!4d6.1544453!16s%2Fg%2F11p0664z6j?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
+                    class="location__button" target="_blank" rel="noopener noreferrer">Voir la carte</a>
+            </div>
         </section>
 
         <section class="program">

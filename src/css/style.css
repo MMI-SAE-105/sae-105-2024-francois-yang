@@ -4,4 +4,6 @@
 @import "components/menu.css";
 @import "layout/header.css";
 @import "components/chapo.css";
-@import "fesetival/chapo.css";
+@import "components/chapo.css";
+@import "section/festival.css";
+@import "section/location.css";
