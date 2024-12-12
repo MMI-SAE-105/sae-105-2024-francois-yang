@@ -1,0 +1,34 @@
+
+.festival{
+    display :flex;
+    position : relative;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.festival__bloc {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+}
+
+
+.festival__image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.image__popcorn {
+    width: 30px; 
+    margin: 10px;
+}
+
+
+.festival__description {
+    font-size: 15px;
+    line-height: 1.6; 
+    margin: 0 20px; 
+}

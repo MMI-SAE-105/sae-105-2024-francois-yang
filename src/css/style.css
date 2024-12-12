@@ -2,3 +2,6 @@
 @import "utils/variables.css";
 @import "components/button.css";
 @import "components/menu.css";
+@import "layout/header.css";
+@import "components/chapo.css";
+@import "fesetival/chapo.css";

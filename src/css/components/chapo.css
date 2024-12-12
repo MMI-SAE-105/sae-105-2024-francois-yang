@@ -1,0 +1,14 @@
+.chapo {
+    text-align: center; 
+
+}
+
+.chapo__description {
+    font-size: 1.5rem;
+    font-weight: bold;
+ 
+    line-height: 1.8;
+    display: block;
+    margin-bottom: 20px; 
+}
+
