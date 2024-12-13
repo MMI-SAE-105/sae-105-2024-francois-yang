@@ -1,3 +1,5 @@
+/*page accueil*/
+
 .festival {
     text-align: center;
     padding: 20px;
@@ -20,4 +22,39 @@
     margin: 15px auto;
     max-width: 600px;
     color: #000;
+}
+
+/*page le festival*/
+
+.le-festival {
+    padding: 20px;
+    text-align: center;
+    background-color: #FAF4EF;
+}
+
+.le-festival__description {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.le-festvail__a-propos {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-style: bold;
+    color: #000;
+}
+
+.le-festival__description-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.le-festival__description-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
 }

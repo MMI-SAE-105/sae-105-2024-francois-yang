@@ -16,6 +16,7 @@
 @import "section/partners.css";
 @import "section/participation.css";
 @import "section/social.css";
+@import "section/equipe.css";
 
 /*Components*/
 @import "components/button.css";
@@ -25,3 +26,9 @@
 
 /*Carrousel*/
 @import "components/carrousel.css";
+
+/*Vendors*/
+@import "normalize.css";
+
+/*utils*/
+@import "utils/variable.css";

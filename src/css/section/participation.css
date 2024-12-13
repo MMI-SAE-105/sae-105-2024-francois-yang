@@ -1,34 +1,22 @@
 .participation {
-    display :flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    font-family: playfair display, serif;
     text-align: center;
     padding: 20px;
     background-color: #FDF8F4;
 }
 
 .participation__title {
-    display: flex;
-    position: relative;
     font-size: 1.8rem;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 .participation__list {
-    display: flex;
-    position: relative;
-    list-style: none; 
+    list-style: none;
     padding: 0;
-    margin: 0 auto; 
-    text-align: center;
+    margin: 20px 0;
 }
 
-
 .participation__item {
-    display: flex;
-    position: relative;
     font-size: 1rem;
     color: #000;
     margin: 5px 0;

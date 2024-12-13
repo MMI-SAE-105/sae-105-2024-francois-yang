@@ -2,4 +2,7 @@ body {
     background-color:  #faf2ef;
     margin: 0;
     padding:0;
+    top :0;
+    left:0;
+    margin-right:-10px;
 }

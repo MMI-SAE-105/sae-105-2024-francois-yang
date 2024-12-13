@@ -1,0 +1,40 @@
+.equipe {
+    padding: 20px;
+    text-align: center;
+    background-color: #FAF4EF;
+}
+
+.equipe__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #000;
+}
+
+.equipe__membre {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.equipe__photo {
+    margin-bottom: 10px;
+}
+
+.equipe__image-membre {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.equipe__nom-membre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+
+

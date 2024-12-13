@@ -5,27 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le festival</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <!--Style-->
+    <link href="/src/css/style.css" rel="stylesheet" />
+
+    <!--Scripts-->
+    <script type="module" src="/src/js/menu.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img">
-        </div>
-        <div class="header__icone">
-            <img src="../assets/icon/loupe_de_recherche.svg" alt="Loupe de recherche" class="header__icone-img">
-            <img src="../assets/icon/menu_hamburger.svg" alt="Menu" class="header__icone-img">
-        </div>
-        <nav class="header__nav">
-            <a href="/" class="header__nav-link">Accueil</a>
-            <a href="../html/programme_diffusion.html" class="header__nav-link">Programme de diffusion</a>
-            <a href="../html/le_festival.html" class="header__nav-link">Le festival</a>
-            <a href="../html/contact.html" class="header__nav-link">Contact</a>
-        </nav>
-        <h1 class="hero__title">Le festival</h1>
-        <img src="../assets/header/image_header_festival.webp" alt="Image de fond" class="header__background">
-    </header>
 
+    <header class="header">
+        <button class="menu__toggle" id="menuToggle">☰</button>
+        <div class="header__banner">
+            <a href="/index.html" target="blank" class="header__logo-link">
+                <img src="/assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img"></a>
+        </div>
+        <img src="/assets/header/image_header_festival.webp" alt="Image de fond" class="header__background">
+        <div class="header__content">
+            <h1 class="header__title">Flash Ciné 25</h1>
+            <p class="header__subtitle">Des films si courts que vous aurez encore le temps pour l'apéro, du fromage
+                et des montagnes !</p>
+        </div>
+
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" id="menuClose">&times;</button>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/index.html" class="menu__link">Accueil</a></li>
+                <li class="menu__item"><a href="../html/le_festival.html" class="menu__link">Le festival</a>
+                </li>
+                <li class="menu__item"><a href="../html/programme_diffusion.html" class="menu__link">Le programme de
+                        diffusion</a>
+                </li>
+                <li class="menu__item"><a href="../html/reservation.html" class="menu__link">Réserver vos billets</a>
+                </li>
+                <li class="menu__item"><a href="../html/contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="le-festival">
             <div class="le-festival__description">
@@ -36,121 +57,104 @@
                     de ces concurrents par son concept dynamique, en mettant à l'honneur les films courts et des courts
                     métrages qui capturent la rapidité, l'énergie et l'innovation du
                     septième art.</p>
+            </div>
+        </section>
+        <section class="equipe">
+            <h2 class="equipe__title">L'équipe</h2>
+            <div class="equipe__membre">
+                <div class="equipe__photo">
+                    <img src="../assets/equipe/marc_durand.webp" alt="Marc Durand" class="equipe__image-membre">
+                </div>
+                <div class="equipe__info">
+                    <h3 class="equipe__nom-membre">Marc Durand</h3>
+                    <p class="equipe__role-membre">Organisateur du festival</p>
+                </div>
+            </div>
 
-                <section class="equipe">
-                    <h2 class="equipe__title">L'équipe</h2>
-                    <div class="equipe__membre">
-                        <div class="equipe__photo">
-                            <img src="../assets/equipe/marc_durand.webp" alt="Marc Durand" class="equipe__image-membre">
-                        </div>
-                        <div class="equipe__info">
-                            <h3 class="equipe__nom-membre">Marc Durand</h3>
-                            <p class="equipe__role-membre">Organisateur du festival</p>
-                        </div>
-                    </div>
+            <div class="equipe__membre">
+                <div class="equipe__photo">
+                    <img src="../assets/equipe/jules_charvet.webp" alt="Jules Charvet" class="equipe__image-membre">
+                </div>
+                <div class="equipe__info">
+                    <h3 class="equipe__nom-membre">Jules Charvet</h3>
+                    <p class="equipe__role-membre">Responsable technique</p>
+                </div>
+            </div>
 
-                    <div class="equipe__membre">
-                        <div class="equipe__photo">
-                            <img src="../assets/equipe/jules_charvet.webp" alt="Jules Charvet"
-                                class="equipe__image-membre">
-                        </div>
-                        <div class="equipe__info">
-                            <h3 class="equipe__nom-membre">Jules Charvet</h3>
-                            <p class="equipe__role-membre">Responsable technique</p>
-                        </div>
-                    </div>
+            <div class="equipe__membre">
+                <div class="equipe__photo">
+                    <img src="../assets/equipe/camille_vernier.webp" alt="Camille Vernier" class="equipe__image-membre">
+                </div>
+                <div class="equipe__info">
+                    <h3 class="equipe__nom-membre">Camille Vernier</h3>
+                    <p class="equipe__role-membre">Réalisatrice locale</p>
+                </div>
+            </div>
 
-                    <div class="equipe__membre">
-                        <div class="equipe__photo">
-                            <img src="../assets/equipe/camille_vernier.webp" alt="Camille Vernier"
-                                class="equipe__image-membre">
-                        </div>
-                        <div class="equipe__info">
-                            <h3 class="equipe__nom-membre">Camille Vernier</h3>
-                            <p class="equipe__role-membre">Réalisatrice locale</p>
-                        </div>
-                    </div>
+            <div class="equipe__membre">
+                <div class="equipe__photo">
+                    <img src="../assets/equipe/claire_cheret.webp" alt="Claire Cheret" class="equipe__image-membre">
+                </div>
+                <div class="equipe__info">
+                    <h3 class="equipe__nom-membre">Claire Cheret</h3>
+                    <p class="equipe__role-membre">Responsable des relations</p>
+                </div>
+            </div>
 
-                    <div class="equipe__membre">
-                        <div class="equipe__photo">
-                            <img src="../assets/equipe/claire_cheret.webp" alt="Claire Cheret"
-                                class="equipe__image-membre">
-                        </div>
-                        <div class="equipe__info">
-                            <h3 class="equipe__nom-membre">Claire Cheret</h3>
-                            <p class="equipe__role-membre">Responsable des relations</p>
-                        </div>
-                    </div>
+            <div class="equipe__membre">
+                <div class="equipe__photo">
+                    <img src="../assets/equipe/nathan_douine.webp" alt="Nathan Douïne" class="equipe__image-membre">
+                </div>
+                <div class="equipe__info">
+                    <h3 class="equipe__nom-membre">Nathan Douïne</h3>
+                    <p class="equipe__role-membre">Photogrape et créateur visuel</p>
+                </div>
+            </div>
 
-                    <div class="equipe__membre">
-                        <div class="equipe__photo">
-                            <img src="../assets/equipe/nathan_douine.webp" alt="Nathan Douïne"
-                                class="equipe__image-membre">
-                        </div>
-                        <div class="equipe__info">
-                            <h3 class="equipe__nom-membre">Nathan Douïne</h3>
-                            <p class="equipe__role-membre">Photogrape et créateur visuel</p>
-                        </div>
-                    </div>
-
-                    <div class="equipe__membre">
-                        <div class="equipe__photo">
-                            <img src="../assets/equipe/alice_cliro.webp" alt="Alice Cliro" class="equipe__image-membre">
-                        </div>
-                        <div class="equipe__info">
-                            <h3 class="equipe__nom-membre">Alice Cliro</h3>
-                            <p class="equipe__role-membre">Chargée de communication</p>
-                        </div>
-                    </div>
+            <div class="equipe__membre">
+                <div class="equipe__photo">
+                    <img src="../assets/equipe/alice_cliro.webp" alt="Alice Cliro" class="equipe__image-membre">
+                </div>
+                <div class="equipe__info">
+                    <h3 class="equipe__nom-membre">Alice Cliro</h3>
+                    <p class="equipe__role-membre">Chargée de communication</p>
+                </div>
+            </div>
             </div>
         </section>
         <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__brand">
-                    <img src="../assets/icon/logo_site_festival2.svg" alt="Logo Festival Flash Cinéma 25"
-                        class="footer__logo">
-                    <h2 class="footer__title">Festival Flash Cinéma 25</h2>
-                </div>
-
-                <nav class="footer__menu">
-                    <h3 class="footer__menu-title">Menu</h3>
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item"><a href="../html/mentions_legales.html"
-                                class="footer__menu-link">Mentions légales</a></li>
-                        <li class="footer__menu-item"><a href="../html/newsletters.html"
-                                class="footer__menu-link">Newsletters</a></li>
-                        <li class="footer__menu-item"><a href="../html/contact.html" class="footer__menu-link">Voir
-                                le lieu</a></li>
-                    </ul>
-                </nav>
-
-                <div class="footer__contact">
-                    <h3 class="footer__contact-title">Contact</h3>
-                    <p class="footer__contact-address">26 Rue Pierre Vernier, 25290 Ornans</p>
-                    <p class="footer__contact-phone">03 81 62 40 30</p>
-                </div>
-
-                <div class="footer__social">
-                    <h3 class="footer__social-title">Nos réseaux sociaux</h3>
-                    <div class="footer__social-icons">
-                        <img src="../assets/icon/tiktok.svg" alt="TikTok">
-                        <img src="../assets/icon/instagram.svg" alt="Instagram">
-                        <img src="../assets/icon/facebook.svg" alt="Facebook">
-                        <img src="../assets/icon/twitter.svg" alt="Twitter">
-                        <img src="../assets/icon/youtube.svg" alt="YouTube">
-
-                    </div>
-                </div>
-
-                <div class="footer__extra">
-                    <div class="footer__accessibility">
-                        <img src="../assets/icon/picto_accessibilite.svg" alt="Malvoyants">
-                    </div>
-                    <div class="footer__partner">
-                        <img src="../assets/logo/logo_visuel.png" alt="Logo Ornans Vallées de Vies"
-                            class="footer__partner-logo">
-                    </div>
+            <div class="footer__logo">
+                <img src="../assets/logo/logo_site_festival_noir.webp" alt="Logo Festival">
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Menu</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Mentions légales</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Newsletters</a></li>
+                    <li class="footer__item"><a href="/html/contact.html" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Adresse</h3>
+                <p>26 Rue Pierre Vernier, 25290 Ornans</p>
+                <p>03 81 62 40 30</p>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Nos réseaux sociaux</h3>
+                <div class="footer__socials">
+                    <img src="../assets/logo/tiktok.webp" alt="TikTok" class="footer__social-icon" loading="lazy">
+                    <img src="../assets/logo/instagram.webp" alt="Instagram" class="footer__social-icon" loading="lazy">
+                    <img src="../assets/logo/facebook.webp" alt="Facebook" class="footer__social-icon" loading="lazy">
+                    <img src="../assets/logo/twitter.webp" alt="Twitter" class="footer__social-icon" loading="lazy">
+                    <img src="../assets/logo/youtube.webp" alt="YouTube" class="footer__social-icon" loading="lazy">
                 </div>
             </div>
+            <div class="footer__images">
+                <img src="../assets/logo/picto_accessibilite.webp" alt="Pictogramme Handicap" class="footer__image"
+                    loading="lazy">
+                <img src="../assets/logo/logo_visuel.webp" alt="Ornans Logo" class="footer__image" loading="lazy">
+            </div>
         </footer>
+    </main>
+
 </body>
