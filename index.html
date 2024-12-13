@@ -5,190 +5,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Ciné 25</title>
+
+<!--Components-->
     <link href="/src/css/components/menu.css" rel="stylesheet" />
-    <link href="/src/css/layout/header.css" rel="stylesheet" />
+    <link href="/src/css/components/carrousel.css" rel="stylesheet" />
+    <link href="src/css/components/button.css" rel="stylesheet" />
+
+<!--Sections-->
+    <link href="/src/css/section/location.css" rel="stylesheet" />
+    <link href="/src/css/section/reservation.css" rel="stylesheet" />
+    <link href="/src/css/section/festival.css" rel="stylesheet" />
+    <link href="/src/css/section/partners.css" rel="stylesheet" />
+    <link href="/src/css/section/program.css" rel="stylesheet" />
+    <link href="/src/css/section/participation.css" rel="stylesheet" />
+
+<!--Layout-->
+    <link href="/src/css/layout/footer.css" rel="stylesheet" />
+    <link href="src/css/layout/header.css" rel="stylesheet" />
+
+<!--Base-->
+    <link href="/src/css/base/main.css" rel="stylesheet" />
+
+<!--Scripts-->
+    <script type="module" src="/src/js/carrousel.js" defer></script>
+    <script type="module" src="/src/js/menu.js" defer></script>
+    
 </head>
 
 <body>
-
+    
     <header class="header">
-        <div class="header__logo">
+        <div class="header__banner">
+            
             <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img">
+            <img src="../assets/icon/loupe_de_recherche.svg" alt="Loupe de recherche" class="header__icone-img">
         </div>
-
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <link href="/src/css/components/button.css" rel="stylesheet" />
-            <span class="menu-btn__bar" aria-hidden="true"></span>
-            <span class="menu-btn__bar" aria-hidden="true"></span>
-            <span class="menu-btn__bar" aria-hidden="true"></span>
-        </button>
-        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
-                <li class="menu__item"><a class="menu__link" href="../html/programme_diffusion.html">Programme de
-                        diffusion</a></li>
-                <li class="menu__item"><a class="menu__link" href="../html/le_festival.html">Le festival</a></li>
-                <li class="menu__item"><a class="menu__link" href="../html/reservation.html">Réservation de
-                        billet</a>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="../html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="../assets/header/image_header.png" alt="Image de fond" class="header__background">
+        <div class="header__content">
+            <h1 class="header__title">Flash Ciné 25</h1>
+            <p class="header__subtitle">Des films si courts que vous aurez encore le temps pour l'apéro, du fromage
+                et des montagnes !</p>
+        </div>
     </header>
+    
 
     <main>
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Flash Ciné 25</h1>
-                <p class="hero__subtitle">
-                    “Des films si courts que vous aurez encore le temps pour l'apéro, du fromage et des montagnes !”
-                </p>
-            </div>
-            <div class="hero__background">
-                <img src="../assets/header/image_header.png" alt="Image de fond" class="hero__background-img">
-            </div>
-        </section>
-
-        <section class="chapo">
-            <link href="/src/css/components/chapo.css" rel="stylesheet" />
-            <strong class="chapo__description">
-                ~ Un festival de cinéma en plein air du 8 août au 10 août 2025 ~
-            </strong>
-        </section>
+        
+        <button class="menu__toggle" id="menuToggle">☰</button>
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" id="menuClose">&times;</button>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Accueil</a></li>
+                <li class="menu__item"><a href="../html/programme_diffusion.html" class="menu__link">Le festival</a></li>
+                <li class="menu__item"><a href="../html/le_festival.html" class="menu__link">Le programme de diffusion</a>
+                </li>
+                <li class="menu__item"><a href="../html/reservation.html" class="menu__link">Réserver vos billets</a></li>
+                <li class="menu__item"><a href="../html/contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
 
         <section class="festival">
-            <link href="/src/css/section/festival.css" rel="stylesheet" />
-            <div class="festival__bloc">
-                <img src="../assets/main/image_plein_air.png" alt="Image de plein air" class="festival__image">
-                <img src="../assets/main/image_de_popcorn.png" alt="Image de popcorn" class="image__popcorn">
-                <p><span class="festival__description">Flash Cinéma 25 vous propose une expérience unique de cinéma en
-                        plein
-                        air dans un cadre naturel exceptionnel. Profitez de films courts et captivants dans une ambiance
-                        conviviale avec vos proches sous le doux coucher de soleil !</span></p>
+            <div class="festival__chapo">
+                <h2 class="festival__title">~ Un festival de cinéma en plein air du 8 août au 10 août 2025 ~</h2>
             </div>
+            <img src="../assets/main/image_plein_air.png" alt="Festival de cinéma" class="festival__image">
+            <p class="festival__description">Flash Ciné 25 vous propose une expérience unique de cinéma en plein air
+                dans un cadre naturel exceptionnel. Profitez de films courts et captivants dans une ambiance conviviale
+                avec vos proches sous le doux coucher de soleil !</p>
+            <a href="/html/le_festival.html" class="festival__link">En savoir plus</a>
         </section>
 
         <section class="location">
-            <link href="/src/css/section/location.css" rel="stylesheet" />
-            <h2 class="location__details-text">Le festival aura lieu à la Plaine de Jeu de Visitation.</h2>
-            <figure>>
-                <img src="../assets//main/lieu_festival.webp" alt="Lieu du festival" class="location__festivald">
-                <figcaption class="location__festvial-description-text">La plaine de jeux de la Visitation à Ornans est
-                    un
-                    espace de loisirs familial situé en plein air, offrant divers équipements pour les enfants, comme
-                    des balançoires, toboggans, et structures d’escalade. Entourée de verdure et de jeux dans un cadre
-                    naturel agréable, elle est l’endroit idéale pour diffuser les courts-métrages.
-                </figcaption>
-            </figure>
-            <div class="location__action">
-                <a href="https://www.google.fr/maps/place/Plaine+de+jeux+de+la+Visitation/@47.1040262,6.1518704,17z/data=!3m1!4b1!4m6!3m5!1s0x478d77c7e74d2ce5:0x95b774c82ff7d4a8!8m2!3d47.1040226!4d6.1544453!16s%2Fg%2F11p0664z6j?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
-                    class="location__button" target="_blank" rel="noopener noreferrer">Voir la carte</a>
-            </div>
+            <h2 class="location__title">Le festival aura lieu à la Plaine de Jeu de Visitation.</h2>
+            <img src="../assets/main/lieu_festival.webp" alt="Lieu du festival" class="location__image">
+            <p class="location__description">La plaine de jeux de la Visitation à Ornans est
+                un espace de loisirs familial situé en plein air, offrant divers équipements pour les enfants, comme
+                des balançoires, toboggans, et structures d’escalade. Entourée de verdure et de jeux dans un cadre
+                naturel agréable, elle est l’endroit idéale pour diffuser les courts-métrages.</p>
+            <a href="https://www.google.fr/maps/place/Plaine+de+jeux+de+la+Visitation/@47.1040262,6.1518704,17z/data=!3m1!4b1!4m6!3m5!1s0x478d77c7e74d2ce5:0x95b774c82ff7d4a8!8m2!3d47.1040226!4d6.1544453!16s%2Fg%2F11p0664z6j?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
+                class="location__link" target="_blank" rel="noopener noreferrer">Voir la carte</a>
         </section>
 
-        <section class="program">
-            <h2 class="program__nom">Le programme de diffusion</h2>
-            <div class="program__carousel">
-                <img src="../assets/film/film1.webp" alt="Film 1" class="program__image--film1">
-                <h3 class="program_titre1">En désaccord</h3>
-                <img src="../assets/film/film2.webp" alt="Film 2" class="program__image--film2">
-                <h3 class="program_titre2">Maman</h3>
-                <img src="../assets/film/film3.webp" alt="Film 3" class="program__image--film3">
-                <h3 class="program_titre3">Avec les amis</h3>
+        <section class="carousel">
+            <h2 class="carousel__title">Le programme de diffusion</h2>
+            <div class="carousel__container">
+                <div class="carousel__images" id="carouselImages">
+                    <img src="../assets/film/film1.avif" alt="Film 1" class="program__carrousel-image">
+                    <img src="../assets/film/film2.avif" alt="Film 2" class="program__carrousel-image">
+                    <img src="../assets/film/film3.avif" alt="Film 3" class="program__carrousel-image">
+                </div>           
             </div>
-            <div class="program__nav">
-                <button class="program__nav-button">←</button>
-                <button class="program__nav-button">→</button>
+            <div class="carousel__nav">
+                <button class="carousel__button" id="prevButton">←</button>
+                <button class="carousel__button" id="nextButton">→</button>
             </div>
+            <a href="/html/programme_diffusion.html" class="carousel__details-link">Voir en détail</a>
+        </section>
+       
+
+        <section class="reservation">
+            <p class="reservation__description">
+                “Ne manquez pas votre place ! Réservez dès maintenant pour plonger dans le monde du 7e Art en plein
+                air.”
+            </p>
+            <button class="reservation__cta-button"><a href="#">Réservez vos billets ici</a></button>
         </section>
 
-        <section>
-            <div class="program__details">
-                <button class="program__detail-button">Voir en détail</button>
+        <section class="participation">
+            <h2 class="participation__title">Pourquoi participer ?</h2>
+
+            <ul class="participation__reasons">
+                <li class="participation__reason">"Des films primés"</li>
+                <li class="participation__reason">Une soirée sous les étoiles</li>
+                <li class="participation__reason">Un cadre unique en montagne</li>
+                <li class="participation__reason">L'ambiance conviviale et chaleureuse</li>
+                <li class="participation__reason">"Des expériences gourmandes" (en lien avec l'apéro, par exemple)
+                </li>
+            </ul>
+        </section>
+
+        <section class="partners">
+            <hr class="partners__divider">
+            <h2 class="partners__title">Nos partenaires</h2>
+            <div class="partners__logos">
+                <img src="../assets/logo/canal.webp" alt="Canal +" class="partners__logo">
+                <img src="../assets/logo/agendoubs.webp" alt="Agendoubs" class="partenaires__logo">
+                <img src="../assets/logo/pathe.webp" alt="Pathé!" class="partenaires__logo">
+                <img src="../assets/logo/est_republicain.webp" alt="L'Est Républicain" class="partenaires__logo">
             </div>
-            <section>
-                <p class="program__description">
-                    “Ne manquez pas votre place ! Réservez dès maintenant pour plonger dans le monde du 7e Art en plein
-                    air.”
-                </p>
-                <div class="program__cta">
-                    <button class="program__cta-button">Réservez vos billets ici</button>
-                </div>
-            </section>
-
-            <section class="participation">
-                <h2 class="participation__title">Pourquoi participer ?</h2>
-
-                <ul class="participation__reasons">
-                    <li class="participation__reason">"Des films primés"</li>
-                    <li class="participation__reason">Une soirée sous les étoiles</li>
-                    <li class="participation__reason">Un cadre unique en montagne</li>
-                    <li class="participation__reason">L'ambiance conviviale et chaleureuse</li>
-                    <li class="participation__reason">"Des expériences gourmandes" (en lien avec l'apéro, par exemple)
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <hr class="participation__divider">
-
-                <h3 class="participation__subtitle">Nos partenaires</h3>
-                <div class="participation__partners">
-                    <img src="../assets/logo/canal.webp" alt="Partenaire 1" class="partenaires__image--partenaire1">
-                    <img src="../assets/logo/agendoubs.webp" alt="Partenaire 2" class="partenaires__image--partenaire2">
-                    <img src="../assets/logo/pathe.webp" alt="Partenaire 3" class="partenaires__image--partenaire3">
-                    <img src="../assets/logo/est_republicain.webp" alt="Partenaire 3"
-                        class="partenaires__image--partenaire3">
-                </div>
-            </section>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__brand">
-                <img src="../assets/icon/logo_site_festival2.svg" alt="Logo Festival Flash Cinéma 25"
-                    class="footer__logo">
-                <h2 class="footer__title">Festival Flash Cinéma 25</h2>
+        <div class="footer__logo">
+            <img src="../assets/logo/logo_site_festival_noir.webp" alt="Logo Festival">
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section-title">Menu</h3>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Mentions légales</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Newsletters</a></li>
+                <li class="footer__item"><a href="/html/contact.html" class="footer__link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section-title">Adresse</h3>
+            <p>26 Rue Pierre Vernier, 25290 Ornans</p>
+            <p>03 81 62 40 30</p>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section-title">Nos réseaux sociaux</h3>
+            <div class="footer__socials">
+                <img src="../assets/logo/tiktok.webp" alt="TikTok" class="footer__social-icon">
+                <img src="../assets/logo/instagram.webp" alt="Instagram" class="footer__social-icon">
+                <img src="../assets/logo/facebook.webp" alt="Facebook" class="footer__social-icon">
+                <img src="../assets/logo/twitter.webp" alt="Twitter" class="footer__social-icon">
+                <img src="../assets/logo/youtube.webp" alt="YouTube" class="footer__social-icon">
             </div>
-
-            <nav class="footer__menu">
-                <h3 class="footer__menu-title">Menu</h3>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a href="../html/mentions_legales.html"
-                            class="footer__menu-link">Mentions légales</a></li>
-                    <li class="footer__menu-item"><a href="../html/newsletters.html"
-                            class="footer__menu-link">Newsletters</a></li>
-                    <li class="footer__menu-item"><a href="../html/contact.html" class="footer__menu-link">Voir
-                            le lieu</a></li>
-                </ul>
-            </nav>
-
-            <div class="footer__contact">
-                <h3 class="footer__contact-title">Contact</h3>
-                <p class="footer__contact-address">26 Rue Pierre Vernier, 25290 Ornans</p>
-                <p class="footer__contact-phone">03 81 62 40 30</p>
-            </div>
-
-            <div class="footer__social">
-                <h3 class="footer__social-title">Nos réseaux sociaux</h3>
-                <div class="footer__social-icons">
-                    <img src="../assets/icon/tiktok.svg" alt="TikTok">
-                    <img src="../assets/icon/instagram.svg" alt="Instagram">
-                    <img src="../assets/icon/facebook.svg" alt="Facebook">
-                    <img src="../assets/icon/twitter.svg" alt="Twitter">
-                    <img src="../assets/icon/youtube.svg" alt="YouTube">
-
-                </div>
-            </div>
-
-            <div class="footer__extra">
-                <div class="footer__accessibility">
-                    <img src="../assets/icon/picto_accessibilite.svg" alt="Malvoyants">
-                </div>
-                <div class="footer__partner">
-                    <img src="../assets/logo/logo_visuel.png" alt="Logo Ornans Vallées de Vies"
-                        class="footer__partner-logo">
-                </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="../assets/logo/logo_visuel.webp" alt="Ornans Logo">
+        </div>
+        <div class="footer__extra">
+            <div class="footer__accessibility">
+                <img src="../assets/logo/picto_accessibilite.webp" alt="Pictogramme Handicap">
             </div>
         </div>
     </footer>

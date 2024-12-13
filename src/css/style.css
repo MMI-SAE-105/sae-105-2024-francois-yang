@@ -1,9 +1,24 @@
-@import "base/main.css";
+/*utils*/
 @import "utils/variables.css";
-@import "components/button.css";
-@import "components/menu.css";
+
+/*Base*/
+@import "base/main.css";
+
+/*Layout*/
 @import "layout/header.css";
-@import "components/chapo.css";
-@import "components/chapo.css";
+@import "layout/footer.css";
+
+/*Section*/
 @import "section/festival.css";
 @import "section/location.css";
+@import "section/program.css";
+@import "section/reservation.css";
+@import "section/partners.css";
+@import "section/participation.css";
+
+/*Components*/
+@import "components/button.css";
+@import "components/menu.css";
+
+/*Carrousel*/
+@import "components/carrousel.css";

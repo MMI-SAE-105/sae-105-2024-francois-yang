@@ -1,0 +1,17 @@
+.program {
+    text-align: center;
+    padding: 20px;
+    background-color: #fdfdfd;
+    font-family: playfair display, serif;
+    color: #333;
+}
+
+.program__title {
+
+    font-family: playfair display, serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+

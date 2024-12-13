@@ -1,0 +1,23 @@
+.participation {
+    text-align: center;
+    padding: 20px;
+    background-color: #FDF8F4;
+}
+
+.participation__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.participation__list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.participation__item {
+    font-size: 1rem;
+    color: #000;
+    margin: 5px 0;
+}

@@ -1,34 +1,39 @@
-
-.festival{
-    display :flex;
-    position : relative;
-    flex-direction: column;
+.festival {
     text-align: center;
-    justify-content: center;
+    padding: 20px;
+    background-color: #FAF4EF;
 }
 
-.festival__bloc {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 20px; 
+.festival__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
 }
-
 
 .festival__image {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 5px; 
+    width: 100%;
+    height: auto;
 }
-
-.image__popcorn {
-    width: 30px; 
-    margin: 10px;
-}
-
 
 .festival__description {
-    font-size: 20px;
-    line-height: 1.6; 
-    margin: 0 20px; 
+    font-size: 1rem;
+    margin: 15px auto;
+    max-width: 600px;
+    color: #000;
+}
+
+.festival__link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFD700;
+}
+
+.festival__link:hover {
+    background-color: #FFC107;
 }

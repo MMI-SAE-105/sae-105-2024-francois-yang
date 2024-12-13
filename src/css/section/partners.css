@@ -1,0 +1,23 @@
+.partners {
+    text-align: center;
+    padding: 20px;
+    background-color: #FAF4EF;
+}
+
+.partners__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.partners__logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.partners__logo {
+    width: 150px;
+    height: auto;
+}
