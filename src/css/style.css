@@ -15,10 +15,13 @@
 @import "section/reservation.css";
 @import "section/partners.css";
 @import "section/participation.css";
+@import "section/social.css";
 
 /*Components*/
 @import "components/button.css";
 @import "components/menu.css";
+@import "components/contact.css";
+@import "components/carte.css";
 
 /*Carrousel*/
 @import "components/carrousel.css";

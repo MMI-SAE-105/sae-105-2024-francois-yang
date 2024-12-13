@@ -6,25 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Ciné 25</title>
 
-    <!--Components-->
-    <link href="/src/css/components/menu.css" rel="stylesheet" />
-    <link href="/src/css/components/carrousel.css" rel="stylesheet" />
-    <link href="src/css/components/button.css" rel="stylesheet" />
-
-    <!--Sections-->
-    <link href="/src/css/section/location.css" rel="stylesheet" />
-    <link href="/src/css/section/reservation.css" rel="stylesheet" />
-    <link href="/src/css/section/festival.css" rel="stylesheet" />
-    <link href="/src/css/section/partners.css" rel="stylesheet" />
-    <link href="/src/css/section/program.css" rel="stylesheet" />
-    <link href="/src/css/section/participation.css" rel="stylesheet" />
-
-    <!--Layout-->
-    <link href="/src/css/layout/footer.css" rel="stylesheet" />
-    <link href="src/css/layout/header.css" rel="stylesheet" />
-
-    <!--Base-->
-    <link href="/src/css/base/main.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link href ="/src/css/style.css" rel="stylesheet" />
 
     <!--Scripts-->
     <script type="module" src="/src/js/carrousel.js" defer></script>
@@ -35,22 +21,18 @@
 <body>
 
     <header class="header">
+        <button class="menu__toggle" id="menuToggle">☰</button>
         <div class="header__banner">
             <a href ="index.html" target="blank" class ="header__logo-link">
-                <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img"></a>
+                <img src="/assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img"></a>
         </div>
-        <img src="../assets/header/image_header.png" alt="Image de fond" class="header__background">
+        <img src="/assets/header/image_header.png" alt="Image de fond" class="header__background">
         <div class="header__content">
             <h1 class="header__title">Flash Ciné 25</h1>
             <p class="header__subtitle">Des films si courts que vous aurez encore le temps pour l'apéro, du fromage
                 et des montagnes !</p>
         </div>
-    </header>
-
-
-    <main>
-
-        <button class="menu__toggle" id="menuToggle">☰</button>
+        
         <nav class="menu" id="mainNav" aria-hidden="true">
             <button class="menu__close" id="menuClose">&times;</button>
             <ul class="menu__list">
@@ -65,6 +47,13 @@
                 <li class="menu__item"><a href="../html/contact.html" class="menu__link">Contact</a></li>
             </ul>
         </nav>
+        
+    </header>
+
+
+    <main>
+
+       
 
         <section class="festival">
             <div class="festival__chapo">
@@ -130,10 +119,10 @@
             <hr class="partners__divider">
             <h2 class="partners__title">Nos partenaires</h2>
             <div class="partners__logos">
-                <img src="../assets/logo/canal.webp" alt="Canal +" class="partners__logo">
-                <img src="../assets/logo/agendoubs.webp" alt="Agendoubs" class="partners__logo">
-                <img src="../assets/logo/pathe.webp" alt="Pathé!" class="partners__logo">
-                <img src="../assets/logo/est_republicain.webp" alt="L'Est Républicain" class="partners__logo">
+                <img src="../assets/logo/canal.webp" alt="Canal +" class="partners__logo" loading="lazy">
+                <img src="../assets/logo/agendoubs.webp" alt="Agendoubs" class="partners__logo" loading="lazy">
+                <img src="../assets/logo/pathe.webp" alt="Pathé!" class="partners__logo" loading="lazy">
+                <img src="../assets/logo/est_republicain.webp" alt="L'Est Républicain" class="partners__logo" loading="lazy">
             </div>
         </section>
     </main>
@@ -158,16 +147,16 @@
         <div class="footer__section">
             <h3 class="footer__section-title">Nos réseaux sociaux</h3>
             <div class="footer__socials">
-                <img src="../assets/logo/tiktok.webp" alt="TikTok" class="footer__social-icon">
-                <img src="../assets/logo/instagram.webp" alt="Instagram" class="footer__social-icon">
-                <img src="../assets/logo/facebook.webp" alt="Facebook" class="footer__social-icon">
-                <img src="../assets/logo/twitter.webp" alt="Twitter" class="footer__social-icon">
-                <img src="../assets/logo/youtube.webp" alt="YouTube" class="footer__social-icon">
+                <img src="../assets/logo/tiktok.webp" alt="TikTok" class="footer__social-icon" loading="lazy">
+                <img src="../assets/logo/instagram.webp" alt="Instagram" class="footer__social-icon" loading="lazy">
+                <img src="../assets/logo/facebook.webp" alt="Facebook" class="footer__social-icon" loading="lazy">
+                <img src="../assets/logo/twitter.webp" alt="Twitter" class="footer__social-icon" loading="lazy">
+                <img src="../assets/logo/youtube.webp" alt="YouTube" class="footer__social-icon" loading="lazy">
             </div>
         </div>
         <div class="footer__images">
-            <img src="../assets/logo/picto_accessibilite.webp" alt="Pictogramme Handicap" class="footer__image">
-            <img src="../assets/logo/logo_visuel.webp" alt="Ornans Logo" class="footer__image">
+            <img src="../assets/logo/picto_accessibilite.webp" alt="Pictogramme Handicap" class="footer__image" loading="lazy">
+            <img src="../assets/logo/logo_visuel.webp" alt="Ornans Logo" class="footer__image" loading="lazy">
         </div>
     </footer>
 </body>
