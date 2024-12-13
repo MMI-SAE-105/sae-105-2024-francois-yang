@@ -1,3 +1,5 @@
+/*section dans la page accueil*/
+
 .program {
     text-align: center;
     padding: 20px;
@@ -15,3 +17,155 @@
     margin-bottom: 10px;
 }
 
+/*page programme*/
+
+.chapeau {
+    font-size: 1.8rem;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.programme {
+    padding: 20px;
+    text-align: center;
+    background-color: #FAF4EF;
+}
+
+.programme h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: #000;
+}
+
+.programme__film1 {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.programme__image-film1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.programme_titre-film1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.programme__heure-film1 {
+    font-size: 1.2rem;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.programme__description-film1 {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+.chapeau {
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.programme__film {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.programme__image-film {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.programme__titre-film {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.programme__heure-film {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.programme__description-film {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+.programme__film2, .programme__film3 {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.programme__image-film2, .programme__image-film3 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.programme_titre-film2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.programme__heure-film1 {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.programme__description-film1 {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+.participation__divider {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
