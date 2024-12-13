@@ -33,22 +33,7 @@
 .carousel__nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-top: 10px;
-}
-
-
-.carousel__details-link {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    border: 1px solid #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.carousel__details-link:hover {
-    background-color: #FFC107;
 }

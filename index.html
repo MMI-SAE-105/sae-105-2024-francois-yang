@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Ciné 25</title>
 
-<!--Components-->
+    <!--Components-->
     <link href="/src/css/components/menu.css" rel="stylesheet" />
     <link href="/src/css/components/carrousel.css" rel="stylesheet" />
     <link href="src/css/components/button.css" rel="stylesheet" />
 
-<!--Sections-->
+    <!--Sections-->
     <link href="/src/css/section/location.css" rel="stylesheet" />
     <link href="/src/css/section/reservation.css" rel="stylesheet" />
     <link href="/src/css/section/festival.css" rel="stylesheet" />
@@ -19,26 +19,25 @@
     <link href="/src/css/section/program.css" rel="stylesheet" />
     <link href="/src/css/section/participation.css" rel="stylesheet" />
 
-<!--Layout-->
+    <!--Layout-->
     <link href="/src/css/layout/footer.css" rel="stylesheet" />
     <link href="src/css/layout/header.css" rel="stylesheet" />
 
-<!--Base-->
+    <!--Base-->
     <link href="/src/css/base/main.css" rel="stylesheet" />
 
-<!--Scripts-->
+    <!--Scripts-->
     <script type="module" src="/src/js/carrousel.js" defer></script>
     <script type="module" src="/src/js/menu.js" defer></script>
-    
+
 </head>
 
 <body>
-    
+
     <header class="header">
         <div class="header__banner">
-            
-            <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img">
-            <img src="../assets/icon/loupe_de_recherche.svg" alt="Loupe de recherche" class="header__icone-img">
+            <a href ="index.html" target="blank" class ="header__logo-link">
+                <img src="../assets/icon/logo_site_festival1.svg" alt="Logo Flash Ciné 25" class="header__logo-img"></a>
         </div>
         <img src="../assets/header/image_header.png" alt="Image de fond" class="header__background">
         <div class="header__content">
@@ -47,19 +46,22 @@
                 et des montagnes !</p>
         </div>
     </header>
-    
+
 
     <main>
-        
+
         <button class="menu__toggle" id="menuToggle">☰</button>
         <nav class="menu" id="mainNav" aria-hidden="true">
             <button class="menu__close" id="menuClose">&times;</button>
             <ul class="menu__list">
                 <li class="menu__item"><a href="index.html" class="menu__link">Accueil</a></li>
-                <li class="menu__item"><a href="../html/programme_diffusion.html" class="menu__link">Le festival</a></li>
-                <li class="menu__item"><a href="../html/le_festival.html" class="menu__link">Le programme de diffusion</a>
+                <li class="menu__item"><a href="../html/programme_diffusion.html" class="menu__link">Le festival</a>
                 </li>
-                <li class="menu__item"><a href="../html/reservation.html" class="menu__link">Réserver vos billets</a></li>
+                <li class="menu__item"><a href="../html/le_festival.html" class="menu__link">Le programme de
+                        diffusion</a>
+                </li>
+                <li class="menu__item"><a href="../html/reservation.html" class="menu__link">Réserver vos billets</a>
+                </li>
                 <li class="menu__item"><a href="../html/contact.html" class="menu__link">Contact</a></li>
             </ul>
         </nav>
@@ -90,10 +92,10 @@
             <h2 class="carousel__title">Le programme de diffusion</h2>
             <div class="carousel__container">
                 <div class="carousel__images" id="carouselImages">
-                    <img src="../assets/film/film1.avif" alt="Film 1" class="program__carrousel-image">
-                    <img src="../assets/film/film2.avif" alt="Film 2" class="program__carrousel-image">
-                    <img src="../assets/film/film3.avif" alt="Film 3" class="program__carrousel-image">
-                </div>           
+                    <img src="../assets/film/film1.avif" alt="Film 1" class="carousel__image">
+                    <img src="../assets/film/film2.avif" alt="Film 2" class="carousel__image">
+                    <img src="../assets/film/film3.avif" alt="Film 3" class="carousel__image">
+                </div>
             </div>
             <div class="carousel__nav">
                 <button class="carousel__button" id="prevButton">←</button>
@@ -101,7 +103,7 @@
             </div>
             <a href="/html/programme_diffusion.html" class="carousel__details-link">Voir en détail</a>
         </section>
-       
+
 
         <section class="reservation">
             <p class="reservation__description">
@@ -114,12 +116,12 @@
         <section class="participation">
             <h2 class="participation__title">Pourquoi participer ?</h2>
 
-            <ul class="participation__reasons">
-                <li class="participation__reason">"Des films primés"</li>
-                <li class="participation__reason">Une soirée sous les étoiles</li>
-                <li class="participation__reason">Un cadre unique en montagne</li>
-                <li class="participation__reason">L'ambiance conviviale et chaleureuse</li>
-                <li class="participation__reason">"Des expériences gourmandes" (en lien avec l'apéro, par exemple)
+            <ul class="participation__lists">
+                <li class="participation__list">"Des films primés"</li>
+                <li class="participation__list">Une soirée sous les étoiles</li>
+                <li class="participation__list">Un cadre unique en montagne</li>
+                <li class="participation__list">L'ambiance conviviale et chaleureuse</li>
+                <li class="participation__list">"Des expériences gourmandes" (en lien avec l'apéro, par exemple)
                 </li>
             </ul>
         </section>
@@ -129,9 +131,9 @@
             <h2 class="partners__title">Nos partenaires</h2>
             <div class="partners__logos">
                 <img src="../assets/logo/canal.webp" alt="Canal +" class="partners__logo">
-                <img src="../assets/logo/agendoubs.webp" alt="Agendoubs" class="partenaires__logo">
-                <img src="../assets/logo/pathe.webp" alt="Pathé!" class="partenaires__logo">
-                <img src="../assets/logo/est_republicain.webp" alt="L'Est Républicain" class="partenaires__logo">
+                <img src="../assets/logo/agendoubs.webp" alt="Agendoubs" class="partners__logo">
+                <img src="../assets/logo/pathe.webp" alt="Pathé!" class="partners__logo">
+                <img src="../assets/logo/est_republicain.webp" alt="L'Est Républicain" class="partners__logo">
             </div>
         </section>
     </main>
@@ -163,13 +165,9 @@
                 <img src="../assets/logo/youtube.webp" alt="YouTube" class="footer__social-icon">
             </div>
         </div>
-        <div class="footer__bottom">
-            <img src="../assets/logo/logo_visuel.webp" alt="Ornans Logo">
-        </div>
-        <div class="footer__extra">
-            <div class="footer__accessibility">
-                <img src="../assets/logo/picto_accessibilite.webp" alt="Pictogramme Handicap">
-            </div>
+        <div class="footer__images">
+            <img src="../assets/logo/picto_accessibilite.webp" alt="Pictogramme Handicap" class="footer__image">
+            <img src="../assets/logo/logo_visuel.webp" alt="Ornans Logo" class="footer__image">
         </div>
     </footer>
 </body>

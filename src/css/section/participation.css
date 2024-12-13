@@ -1,4 +1,8 @@
 .participation {
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: playfair display, serif;
     text-align: center;
     padding: 20px;
     background-color: #FDF8F4;
@@ -7,13 +11,13 @@
 .participation__title {
     font-size: 1.8rem;
     font-weight: bold;
-    margin: 10px 0;
 }
 
 .participation__list {
-    list-style: none;
+    list-style: none; 
     padding: 0;
-    margin: 20px 0;
+    margin: 0 auto; 
+    text-align: center;
 }
 
 .participation__item {
